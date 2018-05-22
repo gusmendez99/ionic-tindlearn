@@ -1,0 +1,99 @@
+<ion-header>
+  <ion-navbar style="min-height:80px">
+   <ion-grid>
+     <ion-row>
+        <ion-col>         
+            <img src="images/tiger.jpg" (click)="prof()" style="width:60px;height:60px;border-radius:50%">         
+        </ion-col>
+        <ion-col style="margin-top:10px">
+            <div class="can-toggle" >
+              <div class="can-toggle demo-rebrand-2" >                 
+                    <input id="e" type="checkbox" >                
+                    <label for="e">                
+                      <div class="can-toggle__switch" data-checked="On" data-unchecked="No" style="max-width:150px; max-height:50px"></div>             
+                    </label>
+                  </div>
+                  </div>
+                </ion-col>
+        <ion-col text-right style="margin-top:-5px">
+          <button ion-button icon-only large clear color="dark" (click)="chatm()">
+            <ion-icon name="ios-text"></ion-icon>
+          </button>
+        </ion-col>
+     </ion-row>
+   </ion-grid>    
+   </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <!---<div >
+    <p text-center >
+      <img src="images/profile.jpg" style="min-height:100%; max-width:90%;border-radius:5%;margin-top:10px;box-shadow: 2px 3px 5px grey;">  
+    </p>  
+    <h3 text-center>Luis Urbina, 24</h3>
+  </div>-->
+  <ion-slides pager style="height: 455px">
+    <ion-slide style="background-color: none">
+      <p text-center >
+        <img src="images/profile.jpg" style="min-height:100%; max-width:90%;border-radius:5%;margin-top:10px;box-shadow: 2px 3px 5px grey;">  
+      </p>  
+      <h5 text-center>Luis Urbina, 22a</h5>
+      <span>Mate, Estadistica (Q70/h)</span><br>
+      <span><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon> </span> 
+    </ion-slide>
+    <ion-slide style="background-color: none">
+      <p text-center >
+        <img src="images/toledo.jpg" style="min-height:100%; max-width:90%;border-radius:5%;margin-top:10px;box-shadow: 2px 3px 5px grey;">  
+      </p>  
+      <h5 text-center>Andree Toledo, 30a</h5>
+      <span>Progra (Q50/h)</span><br>
+      <span><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon> </span> 
+    </ion-slide>
+    
+    <ion-slide style="background-color: none">
+      <p text-center >
+        <img src="images/disha.jpg" style="min-height:100%; max-width:90%;border-radius:5%;margin-top:10px;box-shadow: 2px 3px 5px grey;">  
+      </p>  
+      <h5 text-center>Isa Ortiz, 18a</h5>
+      <span>Quimica (Q50/h)</span><br>
+      <span><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon> </span> 
+    </ion-slide>
+    <ion-slide style="background-color: none">
+      <p text-center >
+        <img src="images/madh.jpg" style="min-height:100%; max-width:90%;border-radius:5%;margin-top:10px;box-shadow: 2px 3px 5px grey;">  
+      </p>  
+      <h3 text-center>Diego Estrada, 18a</h3>
+      <span>Biologia (Q60/h)</span><br>
+      <span><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon> </span> 
+    </ion-slide>
+    <ion-slide style="background-color: none">
+      <p text-center >
+        <img src="images/abril.jpg" style="min-height:100%; max-width:90%;border-radius:5%;margin-top:10px;box-shadow: 2px 3px 5px grey;">  
+      </p>  
+      <h3 text-center>Abril Palencia, 19a</h3>
+      <span>Mate (Q40/h)</span><br>
+      <span><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon> </span> 
+    </ion-slide>
+    
+    
+    <ion-slide style="background-color: none">
+      <p text-center >
+        <img src="images/huma.jpg" style="min-height:100%; max-width:90%;border-radius:5%;margin-top:10px;box-shadow: 2px 3px 5px grey;">  
+      </p>  
+      <h3 text-center>Osmin Josue, 18</h3>
+      <span>Progra (Q40/h)</span><br>
+      <span><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon><ion-icon name="md-star"></ion-icon> </span> 
+    </ion-slide>
+  
+  </ion-slides>
+  <div text-center style="width: 90%; bottom:10px;position:fixed; align-content:center">
+    <ion-buttons text-center style="align-content:center">
+          <button ion-button icon-only outline color="primary" style="height:50px;border-radius:50%" (click)="chatid()">
+                <ion-icon name="md-chatboxes"></ion-icon>
+          </button>
+          <button ion-button icon-only outline color="danger" (click)="lgn()" style="height:50px;border-radius:50%">
+                <ion-icon name="md-bulb"></ion-icon>
+          </button>
+    </ion-buttons>
+  </div>
+</ion-content>

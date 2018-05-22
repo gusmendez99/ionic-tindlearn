@@ -1,0 +1,98 @@
+<ion-header>
+    <ion-navbar style="min-height:80px">
+     <ion-grid>
+       <ion-row>
+          <ion-col>         
+              <img src="images/tiger.jpg" style="width:60px;height:60px;border-radius:50%">         
+          </ion-col>
+          <ion-col style="margin-top:10px">
+              <div class="can-toggle" >
+                <div class="can-toggle demo-rebrand-2" >                 
+                      <input id="e" type="checkbox" >                
+                      <label for="e">                
+                        <div class="can-toggle__switch" data-checked="On" data-unchecked="No" style="max-width:150px; max-height:50px"></div>             
+                      </label>
+                    </div>
+                    </div>
+                  </ion-col>
+          <ion-col text-right style="margin-top:-5px">
+            <button ion-button icon-only large clear color="dark" >
+              <ion-icon name="ios-text"></ion-icon>
+            </button>
+          </ion-col>
+       </ion-row>
+     </ion-grid>    
+     </ion-navbar>
+  </ion-header>
+
+<ion-content>
+    <div >
+        <ion-segment [(ngModel)]="chats" style="background: cornflowerblue">
+          <ion-segment-button value="heart" style="color:white">
+              <ion-icon name="heart"></ion-icon>
+          </ion-segment-button>
+          <ion-segment-button value="chat" style="color:white">
+              <ion-icon name="chatboxes"></ion-icon>
+          </ion-segment-button>
+          <ion-segment-button value="star" style="color:white">
+              <ion-icon name="star"></ion-icon>
+          </ion-segment-button>
+        </ion-segment>
+      </div>
+      
+      <div [ngSwitch]="chats">
+        <ion-list *ngSwitchCase="'heart'">
+          <ion-item (click)="goToChat()">
+            <ion-thumbnail item-start>
+              <img src="images/disha.jpg" style="border-radius:50%">
+            </ion-thumbnail>
+            <h2>Isa Ortiz</h2>
+            <p>Buenos dias Gustavo</p>
+            <ion-badge item-end>1</ion-badge>
+
+          </ion-item>
+          <ion-item>
+              <ion-thumbnail item-start>
+                <img src="images/huma.jpg" style="border-radius:50%">
+              </ion-thumbnail>
+              <h2>Josue Sagastume</h2>
+              <ion-badge item-end>2</ion-badge>
+            </ion-item>
+            
+         
+        </ion-list>
+      
+        <ion-list *ngSwitchCase="'chat'">
+            <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="images/profile.jpg" style="border-radius:50%">
+                </ion-thumbnail>
+                <h2>Luis Urbina</h2>
+                <p>Que dice, toro. ¿Como va la mate?</p>
+                <ion-badge item-end>2</ion-badge>
+              </ion-item>
+              <ion-item>
+                  <ion-thumbnail item-start>
+                    <img src="images/madh.jpg" style="border-radius:50%">
+                  </ion-thumbnail>
+                  <h2>Diego Estrada</h2>
+                  <p>Buenas noshes</p>
+                  <ion-badge item-end>2</ion-badge>
+                </ion-item>
+                
+       
+        </ion-list>
+        <ion-list *ngSwitchCase="'star'">
+            <ion-item (click)="goToChat()">
+                <ion-thumbnail item-start>
+                  <img src="images/disha.jpg" style="border-radius:50%">
+                </ion-thumbnail>
+                <h2>Isa Ortiz</h2>
+                <p>Buenos dias Gustavo</p>
+                <ion-badge item-end>2</ion-badge>
+              </ion-item>
+              
+         
+          </ion-list>
+      </div>
+</ion-content>

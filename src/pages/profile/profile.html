@@ -1,0 +1,79 @@
+<ion-header>
+    <ion-navbar style="min-height:80px">
+        
+     <ion-grid>
+       <ion-row>
+            <ion-title >Usuario</ion-title>
+          <ion-col style="margin-top:10px">
+              <div class="can-toggle" >
+                <div class="can-toggle demo-rebrand-2" >                 
+                      <input id="e" type="checkbox" >                
+                      <label for="e">                
+                        <div class="can-toggle__switch" data-checked="On" data-unchecked="No" style="max-width:150px; max-height:50px"></div>             
+                      </label>
+                    </div>
+                    </div>
+                  </ion-col>
+          <ion-col text-right style="margin-top:-5px">
+            <button ion-button icon-only large clear color="dark">
+              <ion-icon name="ios-text"></ion-icon>
+            </button>
+          </ion-col>
+       </ion-row>
+     </ion-grid>    
+     </ion-navbar>
+  </ion-header>
+
+
+<ion-content padding>
+  <p text-center>
+      <img src="images/tiger.jpg" style="width:80px;height:80px;border-radius:50%">  
+      
+  </p>
+  <p text-center>
+    Gustavo Méndez <br>
+   <span style="color:grey"> Ciencias de la Computación <br>
+    UVG</span>
+  </p>
+  <ion-row text-center>
+    <ion-col>
+        <button ion-button icon-left outline color="cuspurple">
+            <ion-icon style="margin-top:-4px" name="home"></ion-icon>
+           Pagar Premium
+          </button> 
+    </ion-col>
+    <ion-col>
+        <button ion-button icon-left outline color="cuspurple">
+            <ion-icon style="margin-top:-4px" name="md-cog"></ion-icon>
+           Ajustes
+          </button> 
+    </ion-col>
+  </ion-row>
+  <span style="color:grey">Últimos tutores</span>
+  <ion-row>    
+    <ion-col>
+        <p text-center>
+            <img src="images/huma.jpg" style="width:80px;height:80px;border-radius:50%">  
+            
+        </p>
+    </ion-col>
+    <ion-col>
+        <p text-center>
+            <img src="images/disha.jpg" style="width:80px;height:80px;border-radius:50%">  
+            
+        </p>
+    </ion-col>
+    <ion-col>
+        <p text-center>
+            <img src="images/madh.jpg" style="width:80px;height:80px;overflow:hidden; border-radius:50%">  
+            
+        </p>
+    </ion-col>
+  </ion-row>
+  <h4 text-center>Horas de tutoria: 5.23h</h4>
+  <h5 text-center>Puntos esta semana: 500 exp.</h5>
+  <p text-center>
+  <button ion-button full (click)="goToHome()" style="border-radius:40px; ;
+  ">Buscar Tutores</button>
+</p>
+</ion-content>
